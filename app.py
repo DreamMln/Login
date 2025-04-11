@@ -11,7 +11,7 @@ app = Flask(__name__)
 # It should be kept secret to prevent session tampering.
 app.secret_key = 'your_secret_key'
 
-# Generate a secure random salt
+# Generate a secure random salt - before hashing
 def generate_salt():
     return os.urandom(16)  # 16 bytes salt
 
